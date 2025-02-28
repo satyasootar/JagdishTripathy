@@ -148,7 +148,7 @@ function Hero() {
               </span>
             </h1>
             <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
-              Securing digital frontiers through ethical hacking and innovative defense strategies.
+              Securing digital frontiers through ethical hacking and innovative defense 
             </p>
           </div>
           <div className="flex flex-row gap-3">
