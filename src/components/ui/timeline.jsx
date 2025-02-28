@@ -26,7 +26,7 @@ export const Timeline = ({ data }) => {
     <div className="w-full bg-tranparent dark:bg-neutral-950 font-sans md:px-10" ref={containerRef}>
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
         <h2 className="text-3xl md:text-4xl mb-4 text-black dark:text-white max-w-4xl font-bold">
-          Cybersecurity Journey Timeline
+          About my Cybersecurity Journey
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-xl">
           Key milestones and certifications in my offensive security career

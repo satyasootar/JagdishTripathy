@@ -6,9 +6,9 @@ function Footer() {
     return (
         <div className='h-40 bg-transparent '>
             <div className='flex justify-center gap-10' >
-                <Linkedin />
-                <Instagram />
-                <Github />
+                <a href='https://www.linkedin.com/in/jagadishtripathy/' ><Linkedin /></a>
+                <a href='' ><Instagram /></a>
+                <a href='' ><Github /></a>
             </div>
             <div>
                 <div className='flex justify-center py-6 font-light'>© 2025 Jagadish Tripathy  All rights reserved.</div>

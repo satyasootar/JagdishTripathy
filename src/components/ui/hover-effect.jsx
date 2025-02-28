@@ -1,70 +1,33 @@
+'use client';
 import { cn } from "@/lib/utils";
-import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
+import { motion } from "framer-motion";
 
 export const HoverEffect = ({ items, className }) => {
-  let [hoveredIndex, setHoveredIndex] = useState(null);
-
   return (
-    <div className={cn("grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-10", className)}>
+    <div className={cn("grid grid-cols-1", className)}>
       {items.map((item, idx) => (
-        <a
-          href={item?.link}
-          key={item?.link}
-          className="relative group block p-2 h-full w-full"
-          target="_blank"
-          rel="noopener noreferrer"
-          onMouseEnter={() => setHoveredIndex(idx)}
-          onMouseLeave={() => setHoveredIndex(null)}
+        <motion.div
+          key={idx}
+          whileHover={{ scale: 1.02 }}
+          className="relative group block p-4 h-full w-full"
         >
-          <AnimatePresence>
-            {hoveredIndex === idx && (
-              <motion.span
-                className="absolute inset-0 h-full w-full bg-zinc-300 dark:bg-neutral-900 block rounded-3xl"
-                layoutId="hoverBackground"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, transition: { duration: 0.15 } }}
-                exit={{ opacity: 0, transition: { duration: 0.15, delay: 0.2 } }}
-              />
-            )}
-          </AnimatePresence>
-          <Card>
-            <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
-          </Card>
-        </a>
+          <div className="rounded-lg p-6 bg-white dark:bg-transparent dark:border-2 shadow-xl transition-all">
+            <div className="mb-4">
+              {item.icon && (
+                <span className="inline-block p-3 rounded-full bg-opacity-20 dark:bg-opacity-20">
+                  {item.icon}
+                </span>
+              )}
+            </div>
+            <h3 className="font-bold text-gray-800 dark:text-white">
+              {item.title}
+            </h3>
+            <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm">
+              {item.description}
+            </p>
+          </div>
+        </motion.div>
       ))}
     </div>
-  );
-};
-
-export const Card = ({ className, children }) => {
-  return (
-    <div
-      className={cn(
-        "rounded-2xl h-full w-full p-6 overflow-hidden border border-black dark:border-gray-400 backdrop-blur-lg bg-white/20 dark:bg-black/30 group-hover:border-neutral-900 relative z-20 shadow-lg",
-        className
-      )}
-    >
-      <div className="relative z-50">
-        <div className="p-4">{children}</div>
-      </div>
-    </div>
-  );
-};
-
-export const CardTitle = ({ className, children }) => {
-  return (
-    <h4 className={cn("text-black font-bold tracking-wide mt-4 text-lg dark:text-zinc-100 ", className)}>
-      {children}
-    </h4>
-  );
-};
-
-export const CardDescription = ({ className, children }) => {
-  return (
-    <p className={cn("mt-4 text-zinc-400 tracking-wide leading-relaxed text-sm", className)}>
-      {children}
-    </p>
   );
 };

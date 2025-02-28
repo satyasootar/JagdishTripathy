@@ -15,7 +15,7 @@ function App() {
       </div>
 
       {/* Navbar for mobile screens (bottom-0) */}
-      <div className="block md:hidden fixed bottom-10 z-50 w-full bg-transparent dark:bg-transparent">
+      <div className="block md:hidden fixed bottom-14 z-50 w-full bg-transparent dark:bg-transparent">
         <NavHeader />
       </div>
 

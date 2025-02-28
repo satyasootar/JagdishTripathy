@@ -4,9 +4,9 @@ import { MoveRight, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 // Animation parameters (adjust these values as needed)
-const NODE_COUNT = 35;          // Change number of nodes
-const CONNECTION_DISTANCE = 200; // Change connection distance
-const NODE_SPEED = 0.5;         // Change movement speed (0.1-1)
+const NODE_COUNT = 25;          // Change number of nodes
+const CONNECTION_DISTANCE = 50; // Change connection distance
+const NODE_SPEED = 0.2;         // Change movement speed (0.1-1)
 
 function Hero() {
   const [titleNumber, setTitleNumber] = useState(0);
