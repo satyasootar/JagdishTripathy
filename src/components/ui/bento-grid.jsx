@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function BentoGrid({ items = itemsSample }) {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 p-10 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 p-6 max-w-7xl mx-auto">
             {items.map((item, index) => (
                 <motion.div
                     key={index}
