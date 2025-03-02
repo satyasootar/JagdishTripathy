@@ -29,7 +29,7 @@ export const Timeline = ({ data }) => {
           About my Cybersecurity Journey
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-xl">
-          Key milestones and certifications in my offensive security career
+          Key milestones and certifications in my both offensive and diffensive security career
         </p>
       </div>
 
