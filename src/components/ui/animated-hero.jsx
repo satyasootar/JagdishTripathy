@@ -80,7 +80,7 @@ function Hero() {
                       y1={`${node.y}%`}
                       x2={`${otherNode.x}%`}
                       y2={`${otherNode.y}%`}
-                      className="stroke-foreground/10 dark:stroke-foreground/20"
+                      className="stroke-foreground/40 dark:stroke-foreground/40"
                       strokeWidth={0.1 - (distance / CONNECTION_DISTANCE)}
                     />
                   )
@@ -152,12 +152,17 @@ function Hero() {
             </p>
           </div>
           <div className="flex flex-row gap-3">
-            <Button size="lg" className="gap-4 cursor-pointer" variant="outline">
-              Resume<Download />
-            </Button>
-            <Button size="lg" className="gap-4 cursor-pointer">
-              Hire me<MoveRight className="w-4 h-4" />
-            </Button>
+            <a href="/Jagadish Tripathy - Resume.pdf" download >
+              <Button size="lg" className="gap-4 cursor-pointer" variant="outline">
+                Resume<Download />
+              </Button>
+            </a>
+
+            <a href="mailto:jagadishtripathyforyou@gmail.com" >  
+              <Button size="lg" className="gap-4 cursor-pointer">
+                Hire me<MoveRight className="w-4 h-4" />
+              </Button>
+            </a>
           </div>
         </div>
       </div>

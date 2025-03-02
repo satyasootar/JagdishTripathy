@@ -3,7 +3,7 @@ import NavHeader from "@/components/nav-header";
 import { About } from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import { CallToAction } from "./components/CallToAction";
+import  CallToAction  from "./components/CallToAction";
 import Footer from "./components/Footer";
 
 function App() {

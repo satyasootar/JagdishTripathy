@@ -24,7 +24,7 @@ const itemsSample = [
         title: "Packet Sniffer",
         meta: "Deep Packet Analysis",
         description: "Captures and analyzes network packets in real-time, providing insights into IP addresses, MACs, protocols, and payloads to uncover potential security threats.",
-        // Changed icon to Star with a green tone
+        
         icon: <Star className="w-4 h-4 text-green-500" />,
         status: "Secured",
         tags: ["Network", "Sniffing", "Security", "Real-Time"],
@@ -34,7 +34,7 @@ const itemsSample = [
         title: "Password Complexity Checker",
         meta: "Compliance Verified",
         description: "A Python tool that evaluates the strength of passwords based on defined complexity criteria, helping users create secure and compliant passwords.",
-        // Changed icon to TrendingUp with an orange tone
+       
         icon: <TrendingUp className="w-4 h-4 text-orange-500" />,
         tags: ["Passwords", "Compliance", "Security"],
         colSpan: 2,
@@ -43,8 +43,8 @@ const itemsSample = [
     {
         title: "Image Encryption",
         meta: "Distributed Monitoring",
-        description: "A Python-based application for global threat intelligence that monitors network activity and alerts on anomalies to enhance overall security posture.",
-        // Changed icon to CheckCircle with a teal tone for a secure feel
+        description: "A python based CLI tool which encrypt your photo and documents and make you anonymous on the internet.",
+        
         icon: <CheckCircle className="w-4 h-4 text-teal-500" />,
         status: "Under Evaluation",
         tags: ["Threat Intelligence", "Global", "Monitoring"],

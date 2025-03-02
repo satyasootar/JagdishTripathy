@@ -17,7 +17,7 @@ function BentoGrid({ items = itemsSample }) {
                         "group relative p-4 rounded-xl overflow-hidden transition-all duration-300",
                         "border border-gray-100/80 dark:border-white/10 bg-white dark:bg-black",
                         "hover:shadow-[0_2px_12px_rgba(0,0,0,0.03)] dark:hover:shadow-[0_2px_12px_rgba(255,255,255,0.03)]",
-                        "hover:-translate-y-0.5 will-change-transform",
+                        "hover:-translate-y-0.5 will-change-transform shadow-xl",
                         item.colSpan || "col-span-1",
                         item.colSpan === 2 ? "md:col-span-2" : "",
                         {
@@ -52,18 +52,20 @@ function BentoGrid({ items = itemsSample }) {
                                 {item.status || "Active"}
                             </span>
                         </div>
+                        <a href={item.repo} >
 
-                        <div className="space-y-2">
-                            <h3 className="font-medium text-gray-900 dark:text-gray-100 tracking-tight text-[15px]">
-                                {item.title}
-                                <span className="ml-2 text-xs text-gray-500 dark:text-gray-400 font-normal">
-                                    {item.meta}
-                                </span>
-                            </h3>
-                            <p className="text-sm text-gray-600 dark:text-gray-300 leading-snug font-[425]">
-                                {item.description}
-                            </p>
-                        </div>
+                            <div className="space-y-2">
+                                <h3 className="font-medium text-gray-900 dark:text-gray-100 tracking-tight text-[15px]">
+                                    {item.title}
+                                    <span className="ml-2 text-xs text-gray-500 dark:text-gray-400 font-normal">
+                                        {item.meta}
+                                    </span>
+                                </h3>
+                                <p className="text-sm text-gray-600 dark:text-gray-300 leading-snug font-[425]">
+                                    {item.description}
+                                </p>
+                            </div>
+                        </a>
 
                         <div className="flex items-center justify-between mt-2">
                             <div className="flex items-center space-x-2 text-xs text-gray-500 dark:text-gray-400">
