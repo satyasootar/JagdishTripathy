@@ -4,6 +4,7 @@ import {
     Clock,
     Star,
     TrendingUp,
+    HeartHandshake,
     Video,
     Globe,
 } from "lucide-react";
@@ -24,7 +25,7 @@ const itemsSample = [
         title: "Packet Sniffer",
         meta: "Deep Packet Analysis",
         description: "Captures and analyzes network packets in real-time, providing insights into IP addresses, MACs, protocols, and payloads to uncover potential security threats.",
-        
+
         icon: <Star className="w-4 h-4 text-green-500" />,
         status: "Secured",
         tags: ["Network", "Sniffing", "Security", "Real-Time"],
@@ -34,7 +35,7 @@ const itemsSample = [
         title: "Password Complexity Checker",
         meta: "Compliance Verified",
         description: "A Python tool that evaluates the strength of passwords based on defined complexity criteria, helping users create secure and compliant passwords.",
-       
+
         icon: <TrendingUp className="w-4 h-4 text-orange-500" />,
         tags: ["Passwords", "Compliance", "Security"],
         colSpan: 2,
@@ -44,11 +45,22 @@ const itemsSample = [
         title: "Image Encryption",
         meta: "Distributed Monitoring",
         description: "A python based CLI tool which encrypt your photo and documents and make you anonymous on the internet.",
-        
+
         icon: <CheckCircle className="w-4 h-4 text-teal-500" />,
-        status: "Under Evaluation",
+        status: "Active",
         tags: ["Threat Intelligence", "Global", "Monitoring"],
         repo: "https://github.com/jagdishtripathy/Image-Encryption-tool"
+    },
+    {
+        title: "CTF Helper",
+        meta: "Begineer Friendly",
+        description: "CTF Helper is a powerful, modular Command Line Interface (CLI) tool designed for Capture The Flag (CTF) competitions and cybersecurity tasks. Whether you're a beginner or an experienced security professional, this tool provides essential features like decoding, JWT analysis, web exploitation, OSINT tools and many more—all in one place.",
+
+        icon: <HeartHandshake className="w-4 h-4 text-blue-500" />,
+        status: "Active",
+        colSpan: 2,
+        tags: ["Capture The Flag", "Analysis", "Decoding"],
+        repo: "https://github.com/jagdishtripathy/ctf-helper"
     },
 ];
 
