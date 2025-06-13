@@ -62,6 +62,17 @@ const itemsSample = [
         tags: ["Capture The Flag", "Analysis", "Decoding"],
         repo: "https://github.com/jagdishtripathy/ctf-helper"
     },
+    {
+    title: "TinyAI - Cybersecurity AI Assistant",
+    meta: "AI-Powered SIEM Assistant",
+    description: "An intelligent cybersecurity assistant for analyzing logs, Wazuh alerts, and VAPT queries using LLMs. Supports hybrid mode, typing animation, memory, and real-time responses.",
+        
+    icon: <Bot className="w-4 h-4 text-purple-500" />,
+    status: "Stable",
+    tags: ["SIEM", "AI", "Wazuh", "Log Analysis", "Cybersecurity"],
+    colSpan: 2,
+    repo: "https://github.com/jagdishtripathy/TinyAI"
+    },
 ];
 
 export default function Projects() {
