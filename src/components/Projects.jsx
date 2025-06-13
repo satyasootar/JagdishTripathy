@@ -6,7 +6,8 @@ import {
     TrendingUp,
     HeartHandshake,
     Video,
-    Globe,
+    Globe, 
+    Bot
 } from "lucide-react";
 
 const itemsSample = [
