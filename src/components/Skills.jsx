@@ -116,7 +116,7 @@ const skills = [
   },
   {
   title: "AI-Powered Threat Analysis",
-  description: "Leveraging large language models for real-time log correlation, anomaly detection, and contextual threat insights.",
+  description: "Smart threat analysis using AI for logs and anomalies.",
   link: "#",
   icon: <Bot className="w-6 h-6 text-emerald-500" />,
 }
