@@ -113,7 +113,7 @@ const skills = [
     description: "Proactive threat detection and analysis using SIEM tools",
     link: "#",
     icon: <Radar className="w-6 h-6 text-cyan-500" />,
-  }
+  },
   {
   title: "AI-Powered Threat Analysis",
   description: "Leveraging large language models for real-time log correlation, anomaly detection, and contextual threat insights.",
