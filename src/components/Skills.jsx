@@ -10,7 +10,8 @@ import {
   Fingerprint,
   Terminal,
   Code2,
-  Radar
+  Radar,
+  Bot
 } from "lucide-react";
 
 export default function Skills() {
@@ -113,4 +114,10 @@ const skills = [
     link: "#",
     icon: <Radar className="w-6 h-6 text-cyan-500" />,
   }
+  {
+  title: "AI-Powered Threat Analysis",
+  description: "Leveraging large language models for real-time log correlation, anomaly detection, and contextual threat insights.",
+  link: "#",
+  icon: <Bot className="w-6 h-6 text-emerald-500" />,
+}
 ];
