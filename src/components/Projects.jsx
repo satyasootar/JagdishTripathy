@@ -71,7 +71,6 @@ const itemsSample = [
     icon: <Bot className="w-4 h-4 text-purple-500" />,
     status: "Stable",
     tags: ["SIEM", "AI", "Wazuh", "Log Analysis", "Cybersecurity"],
-    colSpan: 2,
     repo: "https://github.com/jagdishtripathy/TinyAI"
     },
 ];
