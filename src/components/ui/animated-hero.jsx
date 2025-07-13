@@ -152,13 +152,16 @@ function Hero() {
             </p>
           </div>
           <div className="flex flex-row gap-3">
-            <a href="https://drive.google.com/file/d/14DVYaIz8b1Hlc1dtZCKS596136a1BnAF/view?usp=drivesdk">
-              <Button size="lg" className="gap-4 cursor-pointer" variant="outline">
+           
+              <Button 
+               onClick={()=>window.open("https://drive.google.com/file/d/14DVYaIz8b1Hlc1dtZCKS596136a1BnAF/view?usp=drivesdk", "_blank")} 
+                size="lg" className="gap-4 cursor-pointer" variant="outline">
                 Resume<ArrowUpRight />
               </Button>
-            </a>
+           
 
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jagadishtripathyforyou@gmail.com&su=Hello%20Satya&body=I%20wanted%20to%20talk%20to%20you%20about..."
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jagdishtripathyforyou@gmail.com&su=Hello%20Jagdish&body=I%20wanted%20to%20connect%20with%20you%20regarding%20your%20work%20in%20VAPT.%20Your%20experience%20as%20a%20security%20engineer%20really%20interests%20me.
+"
            target="_blank"
            rel="noopener noreferrer" >  
               <Button size="lg" className="gap-4 cursor-pointer">
