@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState, useCallback } from "react";
 import { motion } from "framer-motion";
-import { MoveRight, Download } from "lucide-react";
+import { MoveRight, Download, ArrowUpRight  } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 // Animation parameters (adjust these values as needed)
@@ -152,13 +152,15 @@ function Hero() {
             </p>
           </div>
           <div className="flex flex-row gap-3">
-            <a href="/Jagadish Tripathy - Resume.pdf" download >
+            <a href="https://drive.google.com/file/d/14DVYaIz8b1Hlc1dtZCKS596136a1BnAF/view?usp=drivesdk">
               <Button size="lg" className="gap-4 cursor-pointer" variant="outline">
-                Resume<Download />
+                Resume<ArrowUpRight />
               </Button>
             </a>
 
-            <a href="mailto:jagadishtripathyforyou@gmail.com" >  
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jagadishtripathyforyou@gmail.com&su=Hello%20Satya&body=I%20wanted%20to%20talk%20to%20you%20about..."
+           target="_blank"
+           rel="noopener noreferrer" >  
               <Button size="lg" className="gap-4 cursor-pointer">
                 Hire me<MoveRight className="w-4 h-4" />
               </Button>
