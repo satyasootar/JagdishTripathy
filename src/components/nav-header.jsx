@@ -38,28 +38,36 @@ function NavHeader() {
   };
 
   return (
-    <div className="relative flex w-full pl-3 justify-between bg-transparent dark:bg-transparent">
-      <ul
-        className="relative mx-auto flex w-fit rounded-full border-1  backdrop-blur-md border-black dark:border-white dark:bg-transparent"
-        onMouseLeave={() => setPosition((pv) => ({ ...pv, opacity: 0 }))}
-      >
-        <Tab setPosition={setPosition} theme={theme} id="home" handleScroll={handleScroll}>
-          Home
-        </Tab>
-        <Tab setPosition={setPosition} theme={theme} id="about" handleScroll={handleScroll}>
-          About
-        </Tab>
-        <Tab setPosition={setPosition} theme={theme} id="skills" handleScroll={handleScroll}>
-          Skills
-        </Tab>
-        <Tab setPosition={setPosition} theme={theme} id="projects" handleScroll={handleScroll}>
-          Projects
-        </Tab>
-        <Cursor position={position} />
-      </ul>
+    <div className="relative flex w-full items-center justify-between pl-2 pr-2 bg-transparent dark:bg-transparent overflow-hidden">
+      <div className="flex-1 overflow-x-auto no-scrollbar flex md:justify-center">
+        <ul
+          className="relative flex w-fit min-w-max rounded-full border border-black dark:border-white backdrop-blur-md bg-white/10 dark:bg-black/10"
+          onMouseLeave={() => setPosition((pv) => ({ ...pv, opacity: 0 }))}
+        >
+          <Tab setPosition={setPosition} theme={theme} id="home" handleScroll={handleScroll}>
+            Home
+          </Tab>
+          <Tab setPosition={setPosition} theme={theme} id="about" handleScroll={handleScroll}>
+            About
+          </Tab>
+          <Tab setPosition={setPosition} theme={theme} id="skills" handleScroll={handleScroll}>
+            Skills
+          </Tab>
+          <Tab setPosition={setPosition} theme={theme} id="certifications" handleScroll={handleScroll}>
+            Certs
+          </Tab>
+          <Tab setPosition={setPosition} theme={theme} id="projects" handleScroll={handleScroll}>
+            Projects
+          </Tab>
+          <Tab setPosition={setPosition} theme={theme} id="articles" handleScroll={handleScroll}>
+            Articles
+          </Tab>
+          <Cursor position={position} />
+        </ul>
+      </div>
       <button
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-        className="pr-4 rounded-full transition duration-300 text-black dark:text-white"
+        className="ml-2 p-2 shrink-0 rounded-full transition duration-300 text-black dark:text-white cursor-pointer"
       >
         {theme === "light" ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
       </button>
@@ -84,7 +92,7 @@ const Tab = ({ children, setPosition, theme, id, handleScroll }) => {
         });
       }}
       onClick={() => handleScroll(id)}
-      className="relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase text-zinc-500 dark:text-white mix-blend-difference md:px-5 md:py-3 md:text-base"
+      className="relative z-10 block cursor-pointer px-2.5 py-1.5 text-xs font-medium uppercase text-zinc-500 dark:text-white mix-blend-difference md:px-5 md:py-3 md:text-base"
     >
       {children}
     </li>
@@ -102,3 +110,4 @@ const Cursor = ({ position }) => {
 };
 
 export default NavHeader;
+

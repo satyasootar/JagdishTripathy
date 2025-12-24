@@ -126,8 +126,8 @@ function Hero() {
             </a>
           </div>
           <div className="flex gap-4 flex-col">
-            <h1 className="text-5xl md:text-7xl max-w-2xl tracking-tighter text-center font-regular">
-              <span className="text-spektr-cyan-50">Jagdish Tripathy</span>
+            <h1 className="text-4xl md:text-7xl max-w-2xl tracking-tighter text-center font-regular">
+              <span className="text-spektr-cyan-50">Jagadish Tripathy</span>
               <span className="relative flex w-full justify-center overflow-hidden text-center md:pb-4 md:pt-1">
                 &nbsp;
                 {titles.map((title, index) => (
@@ -160,7 +160,7 @@ function Hero() {
             </Button>
 
 
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jagdishtripathyforyou@gmail.com&su=Hello%20Jagdish&body=I%20wanted%20to%20connect%20with%20you%20regarding%20your%20work%20in%20VAPT.%20Your%20experience%20as%20a%20security%20engineer%20really%20interests%20me.
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Jagadishtripathyforyou@gmail.com&su=Hello%20Jagadish&body=I%20wanted%20to%20connect%20with%20you%20regarding%20your%20work%20in%20VAPT.%20Your%20experience%20as%20a%20security%20engineer%20really%20interests%20me.
 "
               target="_blank"
               rel="noopener noreferrer" >

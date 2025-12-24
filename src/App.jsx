@@ -3,7 +3,9 @@ import NavHeader from "@/components/nav-header";
 import { About } from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import  CallToAction  from "./components/CallToAction";
+import Certifications from "./components/Certifications";
+import Articles from "./components/Articles";
+import CallToAction from "./components/CallToAction";
 import Footer from "./components/Footer";
 
 function App() {
@@ -33,10 +35,13 @@ function App() {
           <Skills />
         </section>
 
+        <Certifications />
 
         <section id="projects" className="min-h-screen ">
           <Projects />
         </section>
+
+        <Articles />
 
         <section id="CallToAction" className=" flex justify-center ">
           <CallToAction />
