@@ -10,8 +10,10 @@ import {
   Fingerprint,
   Terminal,
   Code2,
-  Radar,
-  Bot
+  Activity, // New for SIEM
+  Siren,    // New for Incident Response
+  Search,   // New for Threat Hunting
+  FileSearch // New for Forensics
 } from "lucide-react";
 
 export default function Skills() {
@@ -67,57 +69,57 @@ export default function Skills() {
 
 const skills = [
   {
-    title: "Penetration Testing",
-    description: "Ethical hacking and vulnerability assessment using industry-standard tools",
+    title: "SIEM Operations",
+    description: "Log analysis, rule creation, and dashboard management (Splunk, Wazuh, ELK)",
     link: "#",
-    icon: <Shield className="w-6 h-6 text-green-500" />,
+    icon: <Activity className="w-6 h-6 text-cyan-500" />,
   },
   {
-    title: "Network Security",
-    description: "Firewall configuration, IDS/IPS systems, and secure network architecture",
+    title: "Incident Response",
+    description: "Triage, containment, and eradication of security incidents (NIST/SANS)",
+    link: "#",
+    icon: <Siren className="w-6 h-6 text-red-500" />,
+  },
+  {
+    title: "Threat Hunting",
+    description: "Proactive search for IoCs and TTPs using hypothesis-driven approaches",
+    link: "#",
+    icon: <Search className="w-6 h-6 text-emerald-500" />,
+  },
+  {
+    title: "Network Forensics",
+    description: "Packet capture analysis and traffic anomaly detection (Wireshark, Zeek)",
     link: "#",
     icon: <Network className="w-6 h-6 text-blue-500" />,
   },
   {
-    title: "Cryptography",
-    description: "Implementation and analysis of encryption algorithms and protocols",
+    title: "Endpoint Security (EDR)",
+    description: "Endpoint monitoring and malware containment (CrowdStrike, Sysmon)",
     link: "#",
     icon: <Lock className="w-6 h-6 text-purple-500" />,
   },
   {
     title: "Malware Analysis",
-    description: "Reverse engineering and threat intelligence gathering",
+    description: "Static and dynamic analysis of suspicious artifacts and binaries",
     link: "#",
-    icon: <Bug className="w-6 h-6 text-red-500" />,
+    icon: <Bug className="w-6 h-6 text-orange-500" />,
   },
   {
     title: "Digital Forensics",
-    description: "Incident response and evidence preservation techniques",
+    description: "Evidence acquisition and analysis for disk and memory artifacts",
     link: "#",
-    icon: <Fingerprint className="w-6 h-6 text-yellow-500" />,
+    icon: <FileSearch className="w-6 h-6 text-yellow-500" />,
   },
   {
-    title: "Secure Coding",
-    description: "OWASP Top 10 mitigation and secure SDLC practices",
+    title: "Vulnerability Management",
+    description: "Identifying and remediating known vulnerabilities (Nessus, OpenVAS)",
     link: "#",
-    icon: <Terminal className="w-6 h-6 text-pink-500" />,
+    icon: <Shield className="w-6 h-6 text-pink-500" />,
   },
   {
-    title: "Web App Security",
-    description: "SAST/DAST implementation and vulnerability remediation",
+    title: "SOAR & Automation",
+    description: "Automating repetitive security tasks and playbooks",
     link: "#",
     icon: <Code2 className="w-6 h-6 text-indigo-500" />,
-  },
-  {
-    title: "Threat Hunting",
-    description: "Proactive threat detection and analysis using SIEM tools",
-    link: "#",
-    icon: <Radar className="w-6 h-6 text-cyan-500" />,
-  },
-  {
-  title: "AI-Powered Threat Analysis",
-  description: "Smart threat analysis using AI for logs and anomalies.",
-  link: "#",
-  icon: <Bot className="w-6 h-6 text-emerald-500" />,
-}
+  }
 ];

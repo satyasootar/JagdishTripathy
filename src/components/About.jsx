@@ -34,10 +34,10 @@ export const About = () => {
             content: (
                 <div className="space-y-4">
                     <h4 className="text-xl font-semibold text-black dark:text-white">
-                        Advanced Operating Systems
+                       Defensive Security & Log Analysis
                     </h4>
                     <p className="text-neutral-600 dark:text-neutral-400">
-                        Deepened expertise in operating systems with an emphasis on Linux and Windows; mastered advanced command-line tools and techniques essential for penetration testing.
+                       Deepened expertise in Blue Team operations, mastering log analysis (Sysmon, Windows Event Logs) and detecting anomalies using SIEM concepts. 
                     </p>
                 </div>
             )
@@ -47,10 +47,10 @@ export const About = () => {
             content: (
                 <div className="space-y-4">
                     <h4 className="text-xl font-semibold text-black dark:text-white">
-                    Penetration Testing
+                   Security Operations Center 
                     </h4>
                     <p className="text-neutral-600 dark:text-neutral-400">
-                    Transitioned into practical application by conducting both web application and network penetration tests, applying advanced methodologies to assess and secure systems.
+                  Specializing in real-time threat monitoring, incident response, and threat hunting using industry-standard SIEM/EDR tools like Splunk and Wazuh. 
                     </p>
                 </div>
             )
