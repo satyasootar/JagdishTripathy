@@ -1,6 +1,6 @@
 # Jagadish Tripathy - SOC Analyst Portfolio
 
-**[View Live Portfolio](https://Jagadish-tripathy.vercel.app/)**
+**[View Live Portfolio](https://jagdish-tripathy.vercel.app/)**
 
 ![Portfolio Preview](public/og-image.png)
 
