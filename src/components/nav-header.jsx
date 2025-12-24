@@ -2,7 +2,7 @@
 
 import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, Home, User, Code2, Award, FolderGit2, BookOpen } from "lucide-react";
 
 function NavHeader() {
   // Position state for cursor animation
@@ -38,36 +38,42 @@ function NavHeader() {
   };
 
   return (
-    <div className="relative flex w-full items-center justify-between pl-2 pr-2 bg-transparent dark:bg-transparent overflow-hidden">
-      <div className="flex-1 overflow-x-auto no-scrollbar flex md:justify-center">
+    <div className="relative flex w-full items-center justify-center pl-2 pr-2 bg-transparent dark:bg-transparent overflow-hidden">
+      <div className="overflow-x-auto no-scrollbar flex justify-center">
         <ul
           className="relative flex w-fit min-w-max rounded-full border border-black dark:border-white backdrop-blur-md bg-white/10 dark:bg-black/10"
           onMouseLeave={() => setPosition((pv) => ({ ...pv, opacity: 0 }))}
         >
           <Tab setPosition={setPosition} theme={theme} id="home" handleScroll={handleScroll}>
-            Home
+            <Home className="w-4 h-4 md:hidden" />
+            <span className="hidden md:block">Home</span>
           </Tab>
           <Tab setPosition={setPosition} theme={theme} id="about" handleScroll={handleScroll}>
-            About
+            <User className="w-4 h-4 md:hidden" />
+            <span className="hidden md:block">About</span>
           </Tab>
           <Tab setPosition={setPosition} theme={theme} id="skills" handleScroll={handleScroll}>
-            Skills
+            <Code2 className="w-4 h-4 md:hidden" />
+            <span className="hidden md:block">Skills</span>
           </Tab>
           <Tab setPosition={setPosition} theme={theme} id="certifications" handleScroll={handleScroll}>
-            Certs
+            <Award className="w-4 h-4 md:hidden" />
+            <span className="hidden md:block">Certs</span>
           </Tab>
           <Tab setPosition={setPosition} theme={theme} id="projects" handleScroll={handleScroll}>
-            Projects
+            <FolderGit2 className="w-4 h-4 md:hidden" />
+            <span className="hidden md:block">Projects</span>
           </Tab>
           <Tab setPosition={setPosition} theme={theme} id="articles" handleScroll={handleScroll}>
-            Articles
+            <BookOpen className="w-4 h-4 md:hidden" />
+            <span className="hidden md:block">Articles</span>
           </Tab>
           <Cursor position={position} />
         </ul>
       </div>
       <button
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-        className="ml-2 p-2 shrink-0 rounded-full transition duration-300 text-black dark:text-white cursor-pointer"
+        className="absolute right-4 p-2 shrink-0 rounded-full transition duration-300 text-black dark:text-white cursor-pointer z-50"
       >
         {theme === "light" ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
       </button>
