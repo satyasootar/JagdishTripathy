@@ -1,5 +1,6 @@
 "use client";
 import { Timeline } from "./ui/timeline";
+import { TextReveal } from "./ui/text-reveal";
 
 export const About = () => {
     const timelineData = [
@@ -10,9 +11,10 @@ export const About = () => {
                     <h4 className="text-xl font-semibold text-black dark:text-white">
                         Basic networking
                     </h4>
-                    <p className="text-neutral-600 dark:text-neutral-400">
-                        Initiated a comprehensive study of networking fundamentals, establishing a solid understanding of key concepts and protocols.
-                    </p>
+                    <TextReveal
+                        text="Initiated a comprehensive study of networking fundamentals, establishing a solid understanding of key concepts and protocols."
+                        className="text-neutral-600 dark:text-neutral-400"
+                    />
                 </div>
             )
         },
@@ -23,9 +25,10 @@ export const About = () => {
                     <h4 className="text-xl font-semibold text-black dark:text-white">
                         Operating Systems
                     </h4>
-                    <p className="text-neutral-600 dark:text-neutral-400">
-                        Acquired foundational knowledge of operating systems, focusing on their core functionalities and overall architecture.
-                    </p>
+                    <TextReveal
+                        text="Acquired foundational knowledge of operating systems, focusing on their core functionalities and overall architecture."
+                        className="text-neutral-600 dark:text-neutral-400"
+                    />
                 </div>
             )
         },
@@ -34,11 +37,12 @@ export const About = () => {
             content: (
                 <div className="space-y-4">
                     <h4 className="text-xl font-semibold text-black dark:text-white">
-                       Defensive Security & Log Analysis
+                        Defensive Security & Log Analysis
                     </h4>
-                    <p className="text-neutral-600 dark:text-neutral-400">
-                       Deepened expertise in Blue Team operations, mastering log analysis (Sysmon, Windows Event Logs) and detecting anomalies using SIEM concepts. 
-                    </p>
+                    <TextReveal
+                        text="Deepened expertise in Blue Team operations, mastering log analysis (Sysmon, Windows Event Logs) and detecting anomalies using SIEM concepts."
+                        className="text-neutral-600 dark:text-neutral-400"
+                    />
                 </div>
             )
         },
@@ -47,11 +51,12 @@ export const About = () => {
             content: (
                 <div className="space-y-4">
                     <h4 className="text-xl font-semibold text-black dark:text-white">
-                   Security Operations Center 
+                        Security Operations Center
                     </h4>
-                    <p className="text-neutral-600 dark:text-neutral-400">
-                  Specializing in real-time threat monitoring, incident response, and threat hunting using industry-standard SIEM/EDR tools like Splunk and Wazuh. 
-                    </p>
+                    <TextReveal
+                        text="Specializing in real-time threat monitoring, incident response, and threat hunting using industry-standard SIEM/EDR tools like Splunk and Wazuh."
+                        className="text-neutral-600 dark:text-neutral-400"
+                    />
                 </div>
             )
         }

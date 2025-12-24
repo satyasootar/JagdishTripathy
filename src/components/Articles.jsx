@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { ArrowUpRight, BookOpen, Clock, Loader2 } from "lucide-react";
 import { Button } from "./ui/button";
 
+import { cn } from "@/lib/utils";
+
 export default function Articles() {
     const [articles, setArticles] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -64,7 +66,7 @@ export default function Articles() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1 }}
                             viewport={{ once: true }}
-                            className="group relative flex flex-col justify-between rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 p-6 hover:shadow-lg transition-shadow"
+                            className="group relative flex flex-col justify-between rounded-xl border border-gray-100/80 dark:border-white/10 bg-white dark:bg-black p-6 hover:shadow-lg transition-shadow"
                         >
                             <div>
                                 <div className="flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-400 mb-3">
@@ -104,8 +106,11 @@ export default function Articles() {
                 </div>
             )}
 
+
+
             <div className="flex justify-center mt-10">
                 <Button
+                    variant="outline"
                     className="gap-2"
                     onClick={() => window.open("https://medium.com/@jagadishtripathy", "_blank")}
                 >

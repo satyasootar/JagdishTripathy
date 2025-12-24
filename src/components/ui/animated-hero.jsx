@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import { MoveRight, Download, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ShimmerButton from "@/components/ui/shimmer-button";
 
 // Animation parameters (adjust these values as needed)
 const NODE_COUNT = 25;          // Change number of nodes
@@ -153,20 +154,27 @@ function Hero() {
           </div>
           <div className="flex flex-row gap-3">
 
-            <Button
+            <ShimmerButton
               onClick={() => window.open("https://drive.google.com/file/d/14DVYaIz8b1Hlc1dtZCKS596136a1BnAF/view?usp=drivesdk", "_blank")}
-              size="lg" className="gap-4 cursor-pointer" variant="outline">
-              Resume<ArrowUpRight />
-            </Button>
+              className="shadow-2xl"
+            >
+              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                Resume
+              </span>
+              <ArrowUpRight className="w-4 h-4 ml-2 text-white" />
+            </ShimmerButton>
 
 
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Jagadishtripathyforyou@gmail.com&su=Hello%20Jagadish&body=I%20wanted%20to%20connect%20with%20you%20regarding%20your%20work%20in%20VAPT.%20Your%20experience%20as%20a%20security%20engineer%20really%20interests%20me.
 "
               target="_blank"
               rel="noopener noreferrer" >
-              <Button size="lg" className="gap-4 cursor-pointer">
-                Hire me<MoveRight className="w-4 h-4" />
-              </Button>
+              <ShimmerButton className="shadow-2xl">
+                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                  Hire me
+                </span>
+                <MoveRight className="w-4 h-4 ml-2 text-white" />
+              </ShimmerButton>
             </a>
           </div>
         </div>
