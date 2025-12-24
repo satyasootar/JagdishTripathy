@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState, useCallback } from "react";
 import { motion } from "framer-motion";
-import { MoveRight, Download, ArrowUpRight  } from "lucide-react";
+import { MoveRight, Download, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 // Animation parameters (adjust these values as needed)
@@ -12,7 +12,7 @@ function Hero() {
   const [titleNumber, setTitleNumber] = useState(0);
   const [nodes, setNodes] = useState([]);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const titles = useMemo(() => ["VM Management Specialist", "VAPT Practitioner", "Penetration Tester", "SOC Analyst", " Kali Linux & Offensive Security Expert"], []);
+  const titles = useMemo(() => ["SOC Analyst", "Threat Hunter", "Incident Responder", "BTLO Global Top 1%"], []);
 
   // Initialize nodes
   const initNodes = useCallback(() => {
@@ -148,22 +148,22 @@ function Hero() {
               </span>
             </h1>
             <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
-              Securing digital frontiers through ethical hacking and innovative defense strategies.
+              Proactive detection, analysis, and response to cyber threats using advanced SIEM and EDR solutions.
             </p>
           </div>
           <div className="flex flex-row gap-3">
-           
-              <Button 
-               onClick={()=>window.open("https://drive.google.com/file/d/14DVYaIz8b1Hlc1dtZCKS596136a1BnAF/view?usp=drivesdk", "_blank")} 
-                size="lg" className="gap-4 cursor-pointer" variant="outline">
-                Resume<ArrowUpRight />
-              </Button>
-           
+
+            <Button
+              onClick={() => window.open("https://drive.google.com/file/d/14DVYaIz8b1Hlc1dtZCKS596136a1BnAF/view?usp=drivesdk", "_blank")}
+              size="lg" className="gap-4 cursor-pointer" variant="outline">
+              Resume<ArrowUpRight />
+            </Button>
+
 
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jagdishtripathyforyou@gmail.com&su=Hello%20Jagdish&body=I%20wanted%20to%20connect%20with%20you%20regarding%20your%20work%20in%20VAPT.%20Your%20experience%20as%20a%20security%20engineer%20really%20interests%20me.
 "
-           target="_blank"
-           rel="noopener noreferrer" >  
+              target="_blank"
+              rel="noopener noreferrer" >
               <Button size="lg" className="gap-4 cursor-pointer">
                 Hire me<MoveRight className="w-4 h-4" />
               </Button>

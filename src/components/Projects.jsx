@@ -1,77 +1,70 @@
 import { BentoGrid } from "@/components/ui/bento-grid";
+
 import {
-    CheckCircle,
-    Clock,
-    Star,
-    TrendingUp,
-    HeartHandshake,
-    Video,
-    Globe, 
+    ShieldAlert,
+    Activity,
+    FileSearch,
+    ShieldCheck,
+    Lock,
     Bot
 } from "lucide-react";
 
 const itemsSample = [
     {
-        title: "Email Phishing Detector",
-        meta: "Real-Time",
-        description: "An automated tool that detects, quarantines, and alerts about phishing emails by scanning URLs with the VirusTotal API and notifying the security team.",
-        // Changed icon to Clock with a red tone for urgency
-        icon: <Clock className="w-4 h-4 text-red-500" />,
+        title: "SOC-Automation",
+        meta: "Splunk & SOAR",
+        description: "AI-powered SOC automation ecosystem using Splunk, n8n, and Gemini models to analyze alerts and automate incident reporting via Slack.",
+        icon: <Bot className="w-4 h-4 text-purple-500" />,
         status: "Active",
-        tags: ["Phishing", "Detection", "Email Security", "Automation"],
+        tags: ["Splunk", "SOAR", "n8n", "AI Defense"],
         colSpan: 2,
+        repo: "https://github.com/jagdishtripathy/SOC-Automation"
+    },
+    {
+        title: "TinyAI - Security Assistant",
+        meta: "Local-First AI",
+        description: "A privacy-focused AI assistant for SIEM analysis and Wazuh alerts. Supports hybrid mode for analyzing logs without exposing data.",
+        icon: <ShieldCheck className="w-4 h-4 text-green-500" />,
+        status: "Stable",
+        tags: ["Wazuh", "LLM", "Log Analysis", "Python"],
+        repo: "https://github.com/jagdishtripathy/TinyAI"
+    },
+    {
+        title: "SMEs-CyberShield",
+        meta: "Lightweight SIEM",
+        description: "A custom SIEM dashboard for Small/Medium Enterprises featuring Suricata EVE log parsing, real-time alerting, and Elasticsearch integration.",
+        icon: <Activity className="w-4 h-4 text-orange-500" />,
+        tags: ["SIEM", "Suricata", "Elasticsearch", "Flask"],
+        colSpan: 2,
+        repo: "https://github.com/jagdishtripathy/SMEs-CyberShield"
+    },
+    {
+        title: "PCAP-Hunter",
+        meta: "Network Forensics",
+        description: "Advanced packet capture analysis tool to discover hidden data, extract artifacts, and identify embedded threats within network traffic.",
+        icon: <FileSearch className="w-4 h-4 text-blue-500" />,
+        status: "Active",
+        tags: ["Forensics", "PCAP", "Network Analysis"],
+        repo: "https://github.com/jagdishtripathy/PCAP-Hunter"
+    },
+    {
+        title: "Email Phishing Detector",
+        meta: "Threat Detection",
+        description: "Automated tool for detecting and quarantining phishing attempts. Analyzes headers and URLs to block malicious campaigns.",
+        icon: <ShieldAlert className="w-4 h-4 text-red-500" />,
+        status: "Active",
+        colSpan: 2,
+        tags: ["Phishing", "Email Security", "Defense"],
         repo: "https://github.com/jagdishtripathy/Email-phishing-detector"
     },
     {
-        title: "Packet Sniffer",
-        meta: "Deep Packet Analysis",
-        description: "Captures and analyzes network packets in real-time, providing insights into IP addresses, MACs, protocols, and payloads to uncover potential security threats.",
-
-        icon: <Star className="w-4 h-4 text-green-500" />,
-        status: "Secured",
-        tags: ["Network", "Sniffing", "Security", "Real-Time"],
-        repo: "https://github.com/jagdishtripathy/Packet-sniffer"
-    },
-    {
-        title: "Password Complexity Checker",
-        meta: "Compliance Verified",
-        description: "A Python tool that evaluates the strength of passwords based on defined complexity criteria, helping users create secure and compliant passwords.",
-
-        icon: <TrendingUp className="w-4 h-4 text-orange-500" />,
-        tags: ["Passwords", "Compliance", "Security"],
-        colSpan: 2,
-        repo: "https://github.com/jagdishtripathy/Password-complexity-checker"
-    },
-    {
-        title: "Image Encryption",
-        meta: "Distributed Monitoring",
-        description: "A python based CLI tool which encrypt your photo and documents and make you anonymous on the internet.",
-
-        icon: <CheckCircle className="w-4 h-4 text-teal-500" />,
-        status: "Active",
-        tags: ["Threat Intelligence", "Global", "Monitoring"],
+        title: "Image Encryption Tool",
+        meta: "Data Privacy",
+        description: "Secure image encryption utility for data loss prevention (DLP). Ensures sensitive visual data remains protected during transmission.",
+        icon: <Lock className="w-4 h-4 text-teal-500" />,
+        status: "Stable",
+        tags: ["Cryptography", "DLP", "Privacy"],
         repo: "https://github.com/jagdishtripathy/Image-Encryption-tool"
-    },
-    {
-        title: "CTF Helper",
-        meta: "Begineer Friendly",
-        description: "CTF Helper is a powerful, modular Command Line Interface (CLI) tool designed for Capture The Flag (CTF) competitions and cybersecurity tasks. Whether you're a beginner or an experienced security professional, this tool provides essential features like decoding, JWT analysis, web exploitation, OSINT tools and many more—all in one place.",
-
-        icon: <HeartHandshake className="w-4 h-4 text-blue-500" />,
-        status: "Active",
-        colSpan: 2,
-        tags: ["Capture The Flag", "Analysis", "Decoding"],
-        repo: "https://github.com/jagdishtripathy/ctf-helper"
-    },
-    {
-    title: "TinyAI - Cybersecurity AI Assistant",
-    meta: "AI-Powered SIEM Assistant",
-    description: "An intelligent cybersecurity assistant for analyzing logs, Wazuh alerts, and VAPT queries using LLMs. Supports hybrid mode, typing animation, memory, and real-time responses.",
-        
-    icon: <Bot className="w-4 h-4 text-purple-500" />,
-    status: "Stable",
-    tags: ["SIEM", "AI", "Wazuh", "Log Analysis", "Cybersecurity"],
-    repo: "https://github.com/jagdishtripathy/TinyAI"
     },
 ];
 
