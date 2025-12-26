@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Black Shield Background -->
+  <path d="M256 0L56 80V264C56 408 256 512 256 512C256 512 456 408 456 264V80L256 0Z" fill="#000000"/>
+  
+  <!-- White Hacker Silhouette -->
+  <!-- Head/Hoodie -->
+  <circle cx="256" cy="180" r="70" fill="#ffffff"/>
+  <!-- Shoulders -->
+  <path d="M166 280 C166 280, 166 250, 256 250 C346 250, 346 280, 346 280 L346 320 L166 320 Z" fill="#ffffff"/>
+  
+  <!-- Laptop -->
+  <!-- Screen -->
+  <path d="M146 300 L366 300 L350 420 L162 420 Z" fill="#ffffff"/>
+  <!-- Base -->
+  <path d="M130 420 L382 420 L382 440 C382 450 372 460 362 460 L150 460 C140 460 130 450 130 440 Z" fill="#ffffff"/>
+
+  <!-- Bug/Logo on Laptop Screen (Black) -->
+  <g transform="translate(256 360) scale(0.8)">
+    <!-- Bug Body -->
+    <path d="M-20 -25 C-35 -25 -45 -10 -45 10 C-45 40 -20 55 0 55 C20 55 45 40 45 10 C45 -10 35 -25 20 -25 Z" fill="#000000"/>
+    <!-- Bug Legs -->
+    <path d="M-40 -10 L-60 -20 M-45 10 L-65 10 M-40 30 L-60 40" stroke="#000000" stroke-width="8" fill="none"/>
+    <path d="M40 -10 L60 -20 M45 10 L65 10 M40 30 L60 40" stroke="#000000" stroke-width="8" fill="none"/>
+    <!-- Letter 'B' / Detail inside bug -->
+
+  </g>
+</svg>
