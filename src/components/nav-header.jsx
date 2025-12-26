@@ -45,27 +45,27 @@ function NavHeader() {
           onMouseLeave={() => setPosition((pv) => ({ ...pv, opacity: 0 }))}
         >
           <Tab setPosition={setPosition} theme={theme} id="home" handleScroll={handleScroll}>
-            <Home className="w-4 h-4 md:hidden" />
+            <Home className="w-5 h-5 md:hidden" />
             <span className="hidden md:block">Home</span>
           </Tab>
           <Tab setPosition={setPosition} theme={theme} id="about" handleScroll={handleScroll}>
-            <User className="w-4 h-4 md:hidden" />
+            <User className="w-5 h-5 md:hidden" />
             <span className="hidden md:block">About</span>
           </Tab>
           <Tab setPosition={setPosition} theme={theme} id="skills" handleScroll={handleScroll}>
-            <Code2 className="w-4 h-4 md:hidden" />
+            <Code2 className="w-5 h-5 md:hidden" />
             <span className="hidden md:block">Skills</span>
           </Tab>
           <Tab setPosition={setPosition} theme={theme} id="certifications" handleScroll={handleScroll}>
-            <Award className="w-4 h-4 md:hidden" />
+            <Award className="w-5 h-5 md:hidden" />
             <span className="hidden md:block">Certs</span>
           </Tab>
           <Tab setPosition={setPosition} theme={theme} id="projects" handleScroll={handleScroll}>
-            <FolderGit2 className="w-4 h-4 md:hidden" />
+            <FolderGit2 className="w-5 h-5 md:hidden" />
             <span className="hidden md:block">Projects</span>
           </Tab>
           <Tab setPosition={setPosition} theme={theme} id="articles" handleScroll={handleScroll}>
-            <BookOpen className="w-4 h-4 md:hidden" />
+            <BookOpen className="w-5 h-5 md:hidden" />
             <span className="hidden md:block">Articles</span>
           </Tab>
           <Cursor position={position} />
@@ -98,7 +98,7 @@ const Tab = ({ children, setPosition, theme, id, handleScroll }) => {
         });
       }}
       onClick={() => handleScroll(id)}
-      className="relative z-10 block cursor-pointer px-2.5 py-1.5 text-xs font-medium uppercase text-zinc-500 dark:text-white mix-blend-difference md:px-5 md:py-3 md:text-base"
+      className="relative z-10 block cursor-pointer px-2.5 py-2 text-xs font-medium uppercase text-zinc-500 dark:text-white mix-blend-difference md:px-5 md:py-3 md:text-base"
     >
       {children}
     </li>
