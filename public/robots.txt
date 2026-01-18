@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://Jagadish-tripathy.vercel.app/sitemap.xml
+Sitemap: https://jagadishtripathy.me/sitemap.xml
