@@ -18,7 +18,7 @@ const itemsSample = [
         status: "Active",
         tags: ["Splunk", "SOAR", "n8n", "AI Defense"],
         colSpan: 2,
-        repo: "https://github.com/Jagadishtripathy/SOC-Automation"
+        repo: "https://github.com/Jagdishtripathy/SOC-Automation"
     },
     {
         title: "TinyAI - Security Assistant",
@@ -27,7 +27,7 @@ const itemsSample = [
         icon: <ShieldCheck className="w-4 h-4 text-green-500" />,
         status: "Stable",
         tags: ["Wazuh", "LLM", "Log Analysis", "Python"],
-        repo: "https://github.com/Jagadishtripathy/TinyAI"
+        repo: "https://github.com/Jagdishtripathy/TinyAI"
     },
     {
         title: "SMEs-CyberShield",
@@ -36,7 +36,7 @@ const itemsSample = [
         icon: <Activity className="w-4 h-4 text-orange-500" />,
         tags: ["SIEM", "Suricata", "Elasticsearch", "Flask"],
         colSpan: 2,
-        repo: "https://github.com/Jagadishtripathy/SMEs-CyberShield"
+        repo: "https://github.com/Jadishtripathy/SMEs-CyberShield"
     },
     {
         title: "PCAP-Hunter",
@@ -45,7 +45,7 @@ const itemsSample = [
         icon: <FileSearch className="w-4 h-4 text-blue-500" />,
         status: "Active",
         tags: ["Forensics", "PCAP", "Network Analysis"],
-        repo: "https://github.com/Jagadishtripathy/PCAP-Hunter"
+        repo: "https://github.com/Jagdishtripathy/PCAP-Hunter"
     },
     {
         title: "Email Phishing Detector",
@@ -55,7 +55,7 @@ const itemsSample = [
         status: "Active",
         colSpan: 2,
         tags: ["Phishing", "Email Security", "Defense"],
-        repo: "https://github.com/Jagadishtripathy/Email-phishing-detector"
+        repo: "https://github.com/Jagdishtripathy/Email-phishing-detector"
     },
     {
         title: "Image Encryption Tool",
@@ -64,7 +64,7 @@ const itemsSample = [
         icon: <Lock className="w-4 h-4 text-teal-500" />,
         status: "Stable",
         tags: ["Cryptography", "DLP", "Privacy"],
-        repo: "https://github.com/Jagadishtripathy/Image-Encryption-tool"
+        repo: "https://github.com/Jagdishtripathy/Image-Encryption-tool"
     },
 ];
 
